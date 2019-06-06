@@ -1,0 +1,27 @@
+﻿<Window x:Class="TextEditor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TextEditor"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="553.919" Width="1025.953">
+    <Grid>
+        <Label Content="Выберите файл" HorizontalAlignment="Left" Margin="21,10,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="filePathTextBox" HorizontalAlignment="Left" Height="23" Margin="121,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="564"/>
+        <Button Content="Выбрать" HorizontalAlignment="Left" Margin="720,13,0,0" VerticalAlignment="Top" Height="20" Width="100"/>
+        <Button Name="openFileButton" Content="Открыть" HorizontalAlignment="Left" Margin="870,13,0,0" VerticalAlignment="Top" Width="100"/>
+        <xctk:IntegerUpDown Name="myUpDownControl" Value="11" TextAlignment="Left"
+                            Width="100" Height="20" Margin="121,56,797,447"/>
+        <Label Content="Шрифт:" HorizontalAlignment="Left" Margin="55,50,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="contentTextBox" HorizontalAlignment="Left" Height="380" Margin="21,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="975"/>
+        <Button Content="Сохранить" HorizontalAlignment="Left" Margin="870,61,0,0" VerticalAlignment="Top" Width="100"/>
+        <StatusBar HorizontalAlignment="Left" Height="30" Margin="21,482,0,0" VerticalAlignment="Top" Width="975">
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Количество символов:"/>
+                <TextBlock Name="symbolCountTextBlock" Width="100"/>
+            </StackPanel>
+        </StatusBar>
+    </Grid>
+</Window>
